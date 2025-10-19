@@ -1,11 +1,13 @@
 ---
 permalink: /
-title: "👋🏾 Hi! I'm Beleicia!"
+title: "👩🏾‍💻 Hi! I'm Beleicia!"
 author_profile: true
 redirect_from:
   - /about/
   - /about.html
 ---
+*pronounced like buh-lee-sea-ah*
+ 
 
 I am a Ph.D. Candidate at Stanford University, where I am advisded by two awesome advisors - Michael Bernstein and James Landay. I am passionate about exploring **how we design systems that better support the varied experiences of different communities.**
 
@@ -14,3 +16,23 @@ Currently, my research approaches this interest by exploring design metaphors. D
 Beyond design metaphors, I have also explored how we can improve design through research around diverse online communities, algorithmic equity, and computer science ethics education. I am grateful to have worked on these topics alongside researchers at USAID, Spotify, and Adobe. Furthermore, this work has been made possible through generous support from the [HPI and Stanford HAI Ph.D. Fellowship](https://hpi.de/en/research/academic-partnerships/stanford-university/), the [Philanthropy and Civil Society Ph.D. Fellowship](https://pacscenter.stanford.edu/about/people/#filter=.filter_ph-d-fellows__2024-25), [CCSRE's Tech and Racial Equity Graduate Fellowship](https://ccsre.stanford.edu/research-institute/technology-racial-equity-initiative/technology-racial-equity-graduate-fellowship), the [GEM Ph.D. Science Fellowship](https://www.gemfellowship.org/), the [Siebel Scholar Award](https://www.siebelscholars.com/).
 
 Prior to Stanford, I earned an MS in CS at the University of Illinois Urbana-Champaign where I was advised by the wonderful Karrie Karahalios.
+
+---
+
+# 📑 Selected Publications
+
+{% if site.publication_category %}
+  {% for category in site.publication_category  %}
+    {% assign title_shown = false %}
+    {% for post in site.publications reversed %}
+      {% if post.category != category[0] %}
+        {% continue %}
+      {% endif %}
+      {% include archive-single.html %}
+    {% endfor %}
+  {% endfor %}
+{% else %}
+  {% for post in site.publications reversed %}
+    {% include archive-single.html %}
+  {% endfor %}
+{% endif %}
