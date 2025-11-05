@@ -40,8 +40,8 @@
 }
 
 .archive__item-title {
-  margin-bottom: 0.25em;
-  font-family: $sans-serif-narrow;
+  margin-bottom: 0.2em;
+  font-family: $global-font-family;
 
   a + a {
     opacity: 0.5;
@@ -50,7 +50,6 @@
 
 /* remove border*/
 .page__content {
-
   .archive__item-title {
     margin-top: 1em;
     border-bottom: none;
@@ -80,10 +79,9 @@
   }
 
   .archive__item-title {
-    text-decoration: underline;
+    text-decoration: none;
   }
 }
-
 
 /*
    List view
@@ -106,7 +104,6 @@
     margin: 0 0 4px;
   }
 }
-
 
 /*
    Grid view
@@ -150,7 +147,6 @@
     }
   }
 }
-
 
 /*
    Features

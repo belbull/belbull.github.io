@@ -25,9 +25,9 @@ repository: "belbull/site-page"
 author:
   # Biographic information
   avatar: "profile.png"
-  name:
-  pronouns:
-  bio:
+  name: "Beleicia B."
+  pronouns: "she/her/hers"
+  bio: "HCI, design metaphors, community impact"
   location: #
   employer: #
   uri: # URL

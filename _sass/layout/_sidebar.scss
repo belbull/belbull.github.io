@@ -7,19 +7,19 @@
    ========================================================================== */
 
 .sidebar {
-  -webkit-transform: translate3d(0, 0 , 0);
-          transform: translate3d(0, 0 , 0);
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
 
   @include clearfix();
   margin-bottom: 1em;
 
   @media (orientation: portrait) {
-    margin-top: 1em;
+    margin-top: 0em;
   }
 
   @media screen and (min-width: $sidebar-screen-min-width) {
     height: 100vh;
-    overflow-y: auto;               // Add scrollbar if the sidebar is too long
+    overflow-y: auto; // Add scrollbar if the sidebar is too long
     position: fixed;
     padding-top: $masthead-height;
   }
@@ -28,7 +28,7 @@
     @include span(2 of 12);
     opacity: 1;
     -webkit-transition: opacity 0.2s ease-in-out;
-            transition: opacity 0.2s ease-in-out;
+    transition: opacity 0.2s ease-in-out;
 
     &:hover {
       opacity: 1;
@@ -40,17 +40,23 @@
     padding-right: 0;
   }
 
-  h2, h3, h4, h5, h6 {
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     margin-bottom: 0;
-    font-family: $sans-serif-narrow;
+    font-family: $global-font-family;
   }
 
-  h3, h4 {
+  h3,
+  h4 {
     font-size: $type-size-5;
   }
 
-  p, li {
-    font-family: $sans-serif;
+  p,
+  li {
+    font-family: $global-font-family;
     font-size: $type-size-6;
     line-height: 1.5;
   }
@@ -95,11 +101,11 @@
 
   img {
     max-width: 175px;
-    border-radius: 50%;
+    border-radius: 5%;
 
     @include breakpoint($large) {
-      padding: 5px;
-      border: 1px solid var(--global-border-color);
+      padding-bottom: 5px;
+      // border: 1px solid var(--global-border-color);
     }
   }
 }
@@ -128,7 +134,7 @@
   }
 }
 .sidebar .author__name {
-  font-family: $sans-serif;
+  font-family: $global-font-family;
   font-size: $type-size-5;
 }
 
@@ -161,7 +167,7 @@
   position: relative;
   display: table-cell;
   vertical-align: middle;
-  font-family: $sans-serif;
+  font-family: $global-font-family;
   z-index: 10;
   position: relative;
   cursor: pointer;
