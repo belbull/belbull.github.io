@@ -34,7 +34,7 @@ author:
   email: "beleicia@cs.stanford.edu"
 
   # Academic websites
-  academia: https://beleiciabullock.com/files/cv.pdf
+  academia: "../files/cv.pdf"
   arxiv: # URL - Update with the correct link to your profile
   googlescholar: "https://scholar.google.com/citations?user=OyE0sDYAAAAJ&hl=en&oi=ao"
   inspire-hep: # URL
@@ -104,7 +104,7 @@ comments:
     colorscheme: # "light" (default), "dark"
 staticman:
   allowedFields: ["name", "email", "url", "message"]
-  branch: "gh-pages" # "master", "gh-pages"
+  branch: "master" # "master", "gh-pages"
   commitMessage: "New comment."
   filename: comment-{@timestamp}
   format: "yml"

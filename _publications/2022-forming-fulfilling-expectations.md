@@ -7,7 +7,7 @@ excerpt: "**How do Ph.D. students from under-represented groups learn and fulfil
 date: 2022-03-01
 venue: "Collaborative Network for Engineering & Computing Diversity (CoNECD)"
 slidesurl:
-paperurl: "http://beleiciabullock.com/files/2022-forming-fulfilling-expectations.pdf"
-bibtexurl: "http://academicpages.github.io/files/2022-forming-fulfilling-expectations.bib"
+paperurl: "../files/2022-forming-fulfilling-expectations.pdf"
+bibtexurl: "..files/2022-forming-fulfilling-expectations.bib"
 citation:
 ---

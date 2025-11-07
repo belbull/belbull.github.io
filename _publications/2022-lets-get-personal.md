@@ -7,7 +7,7 @@ excerpt: "**How are personalized, news visualizations designed and how might our
 date: 2022-04-01
 venue: "IEEE Visualization and Visual Analytics (VIS)"
 slidesurl:
-paperurl: "http://beleiciabullock.com/files/2022-lets-get-personal.pdf"
-bibtexurl: "http://academicpages.github.io/files/2022-lets-get-personal.bib"
+paperurl: "../files/2022-lets-get-personal.pdf"
+bibtexurl: "..files/2022-lets-get-personal.bib"
 citation:
 ---
